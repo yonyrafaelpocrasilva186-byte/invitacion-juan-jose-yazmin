@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f0e6">
+  <meta name="description" content="Invitación a la boda de Juan José y Yazmin — 19 de diciembre de 2026.">
+  <title>Juan José & Yazmin | Nuestra boda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <audio id="music" src="assets/sabes-reik.mp3" preload="auto" loop></audio>
+  <button class="music-toggle" id="musicToggle" aria-label="Reproducir música" hidden>♫ <span>Música</span></button>
+
+  <main>
+    <section class="intro" id="intro" aria-label="Abrir invitación">
+      <div class="intro-flower flower-a">❀</div><div class="intro-flower flower-b">✿</div>
+      <p class="eyebrow">TENEMOS EL HONOR DE INVITARTE</p>
+      <div class="envelope" id="envelope">
+        <div class="envelope-back"></div>
+        <div class="envelope-letter">
+          <span class="letter-small">A nuestra boda</span>
+          <span class="letter-names">J <i>&</i> Y</span>
+          <span class="letter-date">19 · 12 · 2026</span>
+        </div>
+        <div class="envelope-flap"></div><div class="envelope-front"></div>
+        <div class="seal">J <span>&</span> Y</div>
+      </div>
+      <p class="tap-note">Una historia de amor, un día para recordar</p>
+      <button class="open-button" id="openInvite">Abrir invitación <span>♡</span></button>
+    </section>
+
+    <div class="invitation" id="invitation" aria-hidden="true">
+      <header class="hero">
+        <div class="hero-wash"></div>
+        <p class="eyebrow">CON LA BENDICIÓN DE DIOS Y DE NUESTROS PADRES</p>
+        <h1>Juan José <em>&</em> Yazmin</h1>
+        <p class="hero-sub">NOS CASAMOS</p>
+        <div class="ornament">❦</div>
+        <p class="hero-date">SÁBADO · 19 DE DICIEMBRE · 2026</p>
+        <p class="hero-time">3:00 DE LA TARDE</p>
+        <a class="scroll-cue" href="#our-story" aria-label="Desplazarse hacia abajo">⌄</a>
+      </header>
+
+      <section class="section story" id="our-story">
+        <p class="eyebrow">NUESTRO GRAN DÍA</p>
+        <h2>Una vida para compartir</h2>
+        <p class="quote">“Hay amores que transforman, que sostienen y que invitan a soñar. El nuestro nos ha traído hasta aquí.”</p>
+        <div class="photo-frame"><img src="assets/novios.jpg" alt="Fotografía de Juan José y Yazmin juntos"></div>
+        <p class="couple-signature">Con amor, Juan José & Yazmin</p>
+      </section>
+
+      <section class="countdown-section">
+        <p class="eyebrow">LA CUENTA REGRESIVA COMIENZA</p>
+        <h2>Falta muy poco</h2>
+        <div class="countdown" aria-live="polite">
+          <div><strong id="days">--</strong><span>DÍAS</span></div>
+          <div><strong id="hours">--</strong><span>HORAS</span></div>
+          <div><strong id="minutes">--</strong><span>MINUTOS</span></div>
+          <div><strong id="seconds">--</strong><span>SEGUNDOS</span></div>
+        </div>
+      </section>
+
+      <section class="section family">
+        <p class="eyebrow">CON LA ALEGRÍA DE NUESTRAS FAMILIAS</p>
+        <h2>Junto a quienes nos dieron la vida</h2>
+        <div class="family-grid">
+          <article><h3>Padres de la novia</h3><p>Odilon Mancilla Huamaní</p><p>Albina Huarancca Mendoza</p></article>
+          <article><h3>Padres del novio</h3><p>Francisco Mendez Palma</p><p>Yolanda Ovando Suni</p></article>
+        </div>
+        <div class="padrinos"><span class="eyebrow">NUESTROS PADRINOS</span><p>Dionisio Sáez Allpacca</p><p>Lina Mendoza González</p></div>
+      </section>
+
+      <section class="section details">
+        <p class="eyebrow">CELEBREMOS JUNTOS</p>
+        <h2>El lugar de nuestra unión</h2>
+        <div class="detail-card">
+          <div class="detail-icon">✿</div>
+          <h3>Ceremonia y celebración</h3>
+          <p class="detail-date">19 de diciembre de 2026 · 3:00 p. m.</p>
+          <p>Jr. Tacna 157, Av. Arenales,<br> distrito Andrés Avelino Cáceres.</p>
+          <a class="map-button" href="https://www.google.com/maps/search/?api=1&query=Jr.%20Tacna%20157%2C%20Av.%20Arenales%2C%20distrito%20Andr%C3%A9s%20Avelino%20C%C3%A1ceres" target="_blank" rel="noopener noreferrer">Ver ubicación en Google Maps ↗</a>
+        </div>
+        <p class="dress-code"><span>VESTIMENTA</span><br>Formal</p>
+      </section>
+
+      <footer class="footer">
+        <div class="ornament">❦</div>
+        <h2>¡Te esperamos!</h2>
+        <p>Tu presencia hará aún más especial este día.</p>
+        <p class="footer-names">Juan José & Yazmin</p>
+        <p class="footer-date">19 · 12 · 2026</p>
+      </footer>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
